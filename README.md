@@ -1,5 +1,7 @@
 **DevSecOps** 
-**Ugly** Kotlin application used to test security scanner
+
+
+**Ugly** Spring Boot -  Kotlin application used to test security scanner
 
 **XSS:**
 * http://localhost:8080/article?slug=%3Cscript%3Ealert(%22TEST%22);%3C/script%3E
