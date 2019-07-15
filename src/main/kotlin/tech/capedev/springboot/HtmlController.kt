@@ -11,7 +11,7 @@ class HtmlController(private val articleRepository: ArticleRepository, private v
 
     @GetMapping("/")
     fun blog(model: Model): String {
-        model["title"] = "Blogs with xss"
+        model["title"] = "[Springboot- Kotlin] Articles with security issues"
         model["banner"] = "Articles"
         model["articles"] = articleRepository.findAllByOrderByAddedAtDesc().map { it.render() }
         return "blog"
